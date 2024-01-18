@@ -1,0 +1,13 @@
+No Inorder Traversal, temos um DEPTH FIRST SEARCH ou DFS, ou seja, buscamos o último elemento primeiro,
+no caso do Inorder retornamos primeiro o último elemento da esquerda.
+
+Ao chegarmos no último elemento da esquerda, retornamos ele.
+
+Depois disso voltamos para o nó anterior e retornamos o nó anterior.
+
+Após isso vamos para o nó da direita, buscamos se tem algum outro nó filho para a esquerda para continuar a busca.
+
+Lembrando que sempre buscamos o nó extremo da esquerda. Quando retornamos o último vamos voltando e retornando os demais.
+
+https://media.geeksforgeeks.org/wp-content/uploads/20230623123129/traversal.png
+
