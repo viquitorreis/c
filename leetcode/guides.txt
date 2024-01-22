@@ -1,0 +1,4 @@
+https://leetcode.com/discuss/general-discussion/623011/A-guide-for-dummies-(like-me)
+
+roadmap neetcode:
+    https://neetcode.io/roadmap
