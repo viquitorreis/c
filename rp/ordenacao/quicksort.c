@@ -18,7 +18,7 @@ int main() {
     return 0;
 }
 
-void swap(int * a, int*b) {
+void swap(int *a, int *b) {
     int temp = *a;
     *a = *b;
     *b = temp;
@@ -40,6 +40,9 @@ int partition(int array[], int inicio, int fim) {
     //           j
     //  46, 79, 36, 18, 73, 19, 67, 9, 90, [64]
     //      i
+
+    // DEPOIS COLOCAR O PIVO DINAMICO / RANDOM
+
     int pivo =  array[fim];
 
     int i = inicio;
