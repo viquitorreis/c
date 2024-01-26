@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 void swap(char **a, char **b);
 void quicksort(char *array[], int tamanho);
@@ -16,6 +17,22 @@ int main() {
 
     printf("Array ordenado: ");
     print_array(arrStr, tamanho);
+
+    ////////////////////
+    int maxWords;
+    scanf("%d", &maxWords);
+    char *words[maxWords];
+
+    for (int i = 0; i < maxWords; i++) {
+        words[i] = (char*)malloc(50 * sizeof(char)); // max de 50 caracteres
+        scanf("%s", words[i]);
+    }
+    int sizeOfArray = sizeof(words) / sizeof(words[0]);
+
+    quicksort(words, sizeOfArray);
+
+    printf("Array ordenado 2: ");
+    print_array(words, sizeOfArray);
 
     return 0;
 }

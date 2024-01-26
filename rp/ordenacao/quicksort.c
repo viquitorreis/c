@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void swap(int *a, int *b);
 void quicksort(int array[], int tamanho);
@@ -14,6 +15,22 @@ int main() {
 
     printf("Array ordenado: ");
     print_array(a, tamanho);
+    printf("\n");
+
+    // lendo o input do user
+    int tamanhoArr;
+    scanf("%d", &tamanhoArr);
+
+    int arrNums[tamanhoArr];
+
+    for (int i = 0; i < tamanhoArr; i++) {
+        scanf("%d", &arrNums[i]);
+    }
+
+    quicksort(arrNums, tamanhoArr);
+
+    printf("Array ordenado 2: ");
+    print_array(arrNums, tamanhoArr);
 
     return 0;
 }
